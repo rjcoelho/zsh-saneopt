@@ -3,7 +3,7 @@ Install
 
 Use [zgen](https://github.com/tarjoilija/zgen) or antigen.  Here is how to do it with zgen:
 
-    zgen load willghatch/zsh-saneopt
+    zgen load rjcoelho/zsh-saneopt
 
 Alternatively, just source the .zsh file.  But seriously, use zgen.
 
