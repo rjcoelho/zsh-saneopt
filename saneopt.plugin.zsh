@@ -57,17 +57,17 @@ fi
 #setopt histignorespace
 # if a command is issued that can't be executed as a normal command, and the
 # command is the name of a directory, perform the cd command to that directory.
-#setopt auto_cd
+setopt auto_cd
 
 
 # Don't send SIGHUP to background processes when the shell exits.
 #setopt nohup
 # make cd push the old directory onto the directory stack.
-#setopt auto_pushd
+setopt auto_pushd
 # avoid "beep"ing
-#setopt nobeep
+setopt nobeep
 # don't push the same dir twice.
-#setopt pushd_ignore_dups
+setopt pushd_ignore_dups
 # * shouldn't match dotfiles. ever.
 #setopt noglobdots
 
