@@ -8,6 +8,8 @@ setopt prompt_subst
 setopt append_history
 # save each command's beginning timestamp and the duration to the history file
 setopt extended_history
+# stores the path to the history file.
+HISTFILE="$HOME/.zsh_history"
 # display PID when suspending processes as well
 setopt longlistjobs
 # try to avoid the 'zsh: no matches found...'
