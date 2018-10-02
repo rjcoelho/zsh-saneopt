@@ -10,6 +10,10 @@ setopt append_history
 setopt extended_history
 # stores the path to the history file.
 HISTFILE="$HOME/.zsh_history"
+# The maximum number of events to save in the internal history.
+HISTSIZE=10000
+# The maximum number of events to save in the history file.
+SAVEHIST=10000
 # display PID when suspending processes as well
 setopt longlistjobs
 # try to avoid the 'zsh: no matches found...'
@@ -35,7 +39,7 @@ if [[ "$ZSH_SANEOPT_INSANITY" -gt 0 ]]; then
     # *~(*.gz|*.bz|*.bz2|*.zip|*.Z) -> searches for word not in compressed files
     # don't forget to quote '^', '~' and '#'!
     setopt extended_glob
-    
+
     # don't error out when unset parameters are used
     setopt unset
 fi
@@ -51,6 +55,8 @@ fi
 
 # import new commands from the history file also in other zsh-session
 setopt share_history
+# Write the history file in the ':start:elapsed;command' format.
+setopt inc_append_history
 # If a new command line being added to the history list duplicates an older
 # one, the older command is removed from the list
 setopt histignorealldups
