@@ -9,7 +9,7 @@ setopt append_history
 # save each command's beginning timestamp and the duration to the history file
 setopt extended_history
 # stores the path to the history file.
-HISTFILE="$HOME/.zsh_history"
+HISTFILE="$HOME/.zhistory"
 # The maximum number of events to save in the internal history.
 HISTSIZE=10000
 # The maximum number of events to save in the history file.
@@ -59,10 +59,10 @@ setopt share_history
 setopt inc_append_history
 # If a new command line being added to the history list duplicates an older
 # one, the older command is removed from the list
-setopt histignorealldups
+setopt hist_ignore_all_dups
 # remove command lines from the history list when the first character on the
 # line is a space
-setopt histignorespace
+setopt hist_ignore_space
 # if a command is issued that can't be executed as a normal command, and the
 # command is the name of a directory, perform the cd command to that directory.
 setopt auto_cd
